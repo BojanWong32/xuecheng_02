@@ -12,12 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @description TODO
- * @author Mr.M
- * @date 2022/10/7 16:22
- * @version 1.0
- */
+
 @Api(value = "课程管理接口",tags = "课程管理接口")
 @RestController
 public class CourseBaseInfoController {
@@ -25,7 +20,11 @@ public class CourseBaseInfoController {
     @ApiOperation("课程查询接口")
     @PostMapping("/course/list")
   public PageResult<CourseBase> list(PageParams params, @RequestBody QueryCourseParamsDto queryCourseParamsDto){
-     return  null;
+
+        //调用service
+//        先写dao，再写service
+
+        return  null;
     }
 
 }
